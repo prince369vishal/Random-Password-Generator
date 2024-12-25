@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid rgb(0, 0, 0);
+  margin: 8%;
+  height: 70vh;
+  width: 950px;
+  border-radius: 20px;
+}
+
+.left-container img {
+  width: 450px;
+  margin-right: 20px;
+}
+.right-container {
+
+  width: 100%;
+  height: 100%;
+  padding: 80px 20px;
+  background-color: rgb(241, 247, 252);
+  border-radius: 40px 20px 20px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.highlight-text {
+  color: #da624e;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: #da624e;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.inputAndCopyContainer {
+  
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+
+
+.inputAndCopyContainer img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.inputAndCopyContainer input {
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+  width: 90%;
+}
+
+/* For responsiveness */
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto;
+    width: 70%;
+    margin: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10%; /* Adjust margins for smaller screens */
+    width: 95%;
+  }
+}
+
